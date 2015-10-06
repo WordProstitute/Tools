@@ -1,0 +1,215 @@
+#Por&#10014;land  configuration file.
+#
+# The configuration file for the copyright, meta and publlishing data
+# of the book.
+#
+######################################
+#
+# Publishing
+#
+######################################
+#
+#
+#
+our @subdirectories=("☉","Minister");
+our $pagepath = $bookpath;
+our $booksuffix = ".html";
+our $anchorparagraph = "yes";
+#
+# Meta Description
+#
+our $metadescription = "Por&#10014;land, http://books.goods.wordprostitute.com/Por&#10014;land/, Por&#10014;land, a novel written by Kalab J. OsterTM, edited by Por&#10014;land, copy-edited by Valerie Jean Thompson, copy-edited with Word Prostitute(R), published with Word Prostitute(R), published in United States of America.";
+
+our $metakeywords = "Por&#10014;land, Por&#10014;land, Word Prostitute, United States of America, Valerie Jean Thompson, Kalab J Oster, Word, Prostitute, Por&#10014;land, Valerie, Jean, Thompson, Kalab, J, Oster";
+#
+# Head information...
+#
+push(@htmlhead," \n");
+push(@htmlhead,"<html>\n");
+push(@htmlhead,"<head>\n");
+push(@htmlhead,"<title>Por&#10014;land</title>\n");
+push(@htmlhead,"<meta name=\"keywords\"    content=\"$metakeywords\" />\n");
+push(@htmlhead,"<meta name=\"description\"    content=\"$metadescription\" />\n");
+push(@htmlhead,"\n");
+push(@htmlhead,"<link rel=\"icon\" href=\"http://books.goods.wordprostitute.com/Portland.ico\" type=\"image/x-icon\" />\n");
+push(@htmlhead,"<link rel=\"shortcut icon\" href=\"http://books.goods.wordprostitute.com/Portland.ico\" type=\"image/x-icon\" />\n");
+push(@htmlhead,"<!--\n");
+push(@htmlhead,"\n");
+push(@htmlhead,"Por&#10014;land\n");
+push(@htmlhead,"Written by Kalab J. OsterTM\n");
+push(@htmlhead,"Edited by Por&#10014;land\n");
+push(@htmlhead,"Copy-Edited by Valerie Jean Thompson\n");
+push(@htmlhead,"Copy-Edited with Word Prostitute(R) ToolsTM\n");
+push(@htmlhead,"Published with Word Prostitute(R)\n");
+push(@htmlhead,"Published in United States of America\n");
+push(@htmlhead,"Library of Congress Control Number: 2012934498\n");
+push(@htmlhead,"International Standard Book Number: 9780972846523\n");
+push(@htmlhead,"Word Prostitute(R) Revision Control Number: 54493\n");
+push(@htmlhead,"\n");
+push(@htmlhead,"\n");
+push(@htmlhead,"Paper Price: 1 USD and 1 tree for 1 print. Only 1 print per person.\n");
+push(@htmlhead,"\n");
+push(@htmlhead,"Copyright (C) 2012 Word Prostitute(R). All Rights Reserved.\n");
+push(@htmlhead,"\n");
+push(@htmlhead,"\n");
+push(@htmlhead,"Por&#10014;land's paragraphs can be bookmarked (or added to Favorites)\n");
+push(@htmlhead,"One needs to click on the paragraph then bookmark (or add to Favorites)\n");
+push(@htmlhead,"the URL appearing in the U.S. Intranet web browser's address bar.\n");
+push(@htmlhead,"\n");
+push(@htmlhead,"-->\n");
+
+push(@htmlhead,"</head>\n");
+#
+# Body Top...
+#
+push(@htmlbodyheader," \n");
+push(@htmlbodyheader,"<body	color=\"black\"\n");
+push(@htmlbodyheader,"		link=\"black\"\n");
+push(@htmlbodyheader,"		vlink=\"black\"\n");
+push(@htmlbodyheader,"		alink=\"black\">\n");
+push(@htmlbodyheader,"\n");
+
+push(@htmlbodytop,"<div style=\"border-top : 0px solid black ; border-bottom : 0px solid black ; border-right : 0px solid black ; border-left : 0px solid black ; margin: 4%\">\n");
+push(@htmlbodytop,"\n");
+push(@htmlbodytop,"<br />\n");
+push(@htmlbodytop,"\n");
+push(@htmlbodytop,"<center>\n");
+
+push(@htmlbodytop,"<a style=\"text-align: center; letter-spacing: 2px; font-size: 40px; font-family: Gothic; color:black;text-decoration:none; font-variant: small-caps;\" href=\"http://books.goods.wordprostitute.com/Por&#10014;land/\"> Por<font color=\"darkred\">&#10014;</font>land </a>\n");
+
+push(@htmlbodytop,"</center>\n");
+
+push(@htmlbodytop,"<br />\n");
+push(@htmlbodytop,"<br />\n");
+push(@htmlbodytop,"<br />\n");
+push(@htmlbodytop,"<br />\n");
+push(@htmlbodytop,"<br />\n");
+push(@htmlbodytop,"<br />\n");
+push(@htmlbodytop,"\n");
+push(@htmlbodytop,"<div style=\"float: left\">\n");
+push(@htmlbodytop,"<div style=\"text-align: left\">\n");
+push(@htmlbodytop,"<a style=\"text-decoration:none;text-align: center; letter-spacing: 2px; font-size: 10px; font-family: Time New Roman; color:gray; font-variant: small-caps\" href=\"PREVIOUSCHAPTER\">\n");
+push(@htmlbodytop,"&nbsp;PREVIOUSCHAPTER_NOLINE\n");
+push(@htmlbodytop,"</a>\n");
+push(@htmlbodytop,"</div>\n");
+push(@htmlbodytop,"</div>\n");
+push(@htmlbodytop,"\n");
+push(@htmlbodytop,"<div style=\"float: right\">\n");
+push(@htmlbodytop,"<div style=\"text-align: right\">\n");
+push(@htmlbodytop,"<a style=\"text-decoration:none;text-align: center; letter-spacing: 2px; font-size: 10px; font-family: Time New Roman; color:gray; font-variant: small-caps\" href=\"NEXTCHAPTER\">\n");
+push(@htmlbodytop,"NEXTCHAPTER_NOLINE&nbsp;\n");
+push(@htmlbodytop,"</a>\n");
+push(@htmlbodytop,"</div>\n");
+push(@htmlbodytop,"</div>\n");
+push(@htmlbodytop,"\n");
+push(@htmlbodytop,"<br />\n");
+push(@htmlbodytop,"\n");
+push(@htmlbodytop,"<center>\n");
+push(@htmlbodytop,"<a style=\"text-align: center; letter-spacing: 2px; font-size: 20px; font-family: Time New Roman; color:darkred;text-decoration:none; font-variant: small-caps\" href=\"NEXTCHAPTER\">CHAPTER_NOLINE</a>\n");
+push(@htmlbodytop,"</center>\n");
+push(@htmlbodytop,"<br />\n");
+push(@htmlbodytop,"<br />\n");
+push(@htmlbodytop,"\n");
+push(@htmlbodytop,"<div style=\"margin: 3% ; padding-top: 10px; padding-bottom: 10px; padding-right: 10px;  padding-left: 10px; \">\n");
+
+#
+# Body Paragraph...
+#
+#
+# Body Paragraph...
+#
+push(@paragraphtag,"<p style=\"text-indent: 20px; margin-bottom: 10; margin-top: 10; text-align: justify; letter-spacing: 1px; line-height: 28px;font-size: 18px; color:black;\" >\n");
+push(@paragraphtag,"</p>\n");
+
+#
+# Body bottom...
+#
+push(@htmlbodybottom," \n");
+push(@htmlbodybottom,"</div>\n");
+push(@htmlbodybottom,"\n");
+push(@htmlbodybottom,"<center>\n");
+push(@htmlbodybottom,"<a style=\"text-align: center; letter-spacing: 2px; font-size: 20px; font-family: Time New Roman; color:darkred;text-decoration:none; font-variant: small-caps\" href=\"NEXTCHAPTER\">CHAPTER_NOLINE</a>\n");
+push(@htmlbodybottom,"</center>\n");
+push(@htmlbodybottom,"\n");
+push(@htmlbodybottom,"<div style=\"float: left\">\n");
+push(@htmlbodybottom,"<div style=\"text-align: left\">\n");
+push(@htmlbodybottom,"<a style=\"text-decoration:none;text-align: center; letter-spacing: 2px; font-size: 10px; font-family: Time New Roman; color:gray; font-variant: small-caps\"  href=\"PREVIOUSCHAPTER\">\n");
+push(@htmlbodybottom,"&nbsp;PREVIOUSCHAPTER_NOLINE\n");
+push(@htmlbodybottom,"</a>\n");
+push(@htmlbodybottom,"</div>\n");
+push(@htmlbodybottom,"</div>\n");
+push(@htmlbodybottom,"\n");
+push(@htmlbodybottom,"<div style=\"float: right\">\n");
+push(@htmlbodybottom,"<div style=\"text-align: right\">\n");
+push(@htmlbodybottom,"<a style=\"text-decoration:none;text-align: center; letter-spacing: 2px; font-size: 10px; font-family: Time New Roman; color:gray; font-variant: small-caps\" href=\"NEXTCHAPTER\">\n");
+push(@htmlbodybottom,"NEXTCHAPTER_NOLINE\n");
+push(@htmlbodybottom,"</a>\n");
+push(@htmlbodybottom,"</div>\n");
+push(@htmlbodybottom,"</div>\n");
+push(@htmlbodybottom,"\n");
+
+push(@htmlbodybottom,"<br />\n");
+push(@htmlbodybottom,"<br />\n");
+push(@htmlbodybottom,"<br />\n");
+push(@htmlbodybottom,"<br />\n");
+
+
+push(@htmlbodybottom,"<br />\n");
+push(@htmlbodybottom,"</div>\n");
+#
+# Copyright...
+#
+our @copyright;
+push(@copyright,"<p style=\"text-align: center; letter-spacing: 1px; line-height: 12px; font-size: 10px; font-family: Time New Roman; color:black; text-decoration:none\">\n");
+push(@copyright,"\n");
+push(@copyright,"<br />\n");
+push(@copyright,"<br />\n");
+push(@copyright,"<br />\n");
+push(@copyright,"<br />\n");
+push(@copyright,"<br />\n");
+push(@copyright,"<br />\n");
+push(@copyright,"<br />\n");
+push(@copyright,"<br />\n");
+push(@copyright,"<br />\n");
+push(@copyright,"<br />\n");
+push(@copyright,"<br />\n");
+push(@copyright,"<br />\n");
+push(@copyright,"<br /><a style=\"letter-spacing: 1px; line-height: 14px; font-size: 14px; text-decoration:none; color:black;\" href=\"http://books.goods.wordprostitute.com/Por&#10014;land/\">Portland</a>\n");
+push(@copyright,"<br />Written by <a style=\"text-decoration:none; color:black\" href=\"http://tool.services.wordprostitute.com/KalabJOster.html\">Kalab J. Oster</a>&trade;\n");
+push(@copyright,"<br />Edited by Portland\n");
+push(@copyright,"<br />Copy-Edited by <a style=\"text-decoration:none; color:black\" href=\"http://tool.services.wordprostitute.com/ValerieJeanThompson.html\">Valerie Jean Thompson</a>\n");
+push(@copyright,"<br />Copy-Edited with <a style=\"text-decoration:none; color:black\" href=\"http://wordprostitute.com\">Word Prostitute</a>&reg; Tools&trade;\n");
+push(@copyright,"<br />Published with <a style=\"text-decoration:none; color:black\" href=\"http://wordprostitute.com\">Word Prostitute</a>&reg;\n");
+push(@copyright,"<br />Published in <a style=\"text-decoration:none; color:black\" href=\"http://www.usa.gov/\">United States of America</a>\n");
+push(@copyright,"<br /><a style=\"text-decoration:none; color:black\" href=\"http://www.loc.gov/index.html\">Library of Congress Control Number</a>: 2012934498\n");
+push(@copyright,"<br /><a style=\"text-decoration:none; color:black\" href=\"http://www.isbn.org\">International Standard Book Number</a>: 9780972846523\n");
+push(@copyright,"<br /><a style=\"text-decoration:none; color:black\" href=\"http://wordprostitute.com\">Word Prostitute</a>&reg; Revision Control Number: <a style=\"text-decoration:none; color:black\" href=\"http://words.goods.wordprostitute.com/Por&#10014;land/\">54493</a>\n");
+push(@copyright,"<br />\n");
+push(@copyright,"<br />Electric Price: Free To Read\n");
+push(@copyright,"<br /><a style=\"text-decoration:none; color:black\" href=\"https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=LT5PXUN8UCBB2\">Paper or Electric Price: 1 USD and</a> <a style=\"text-decoration:none; color:black\" href=\"http://www.plantabillion.org/\">1 tree</a><a style=\"text-decoration:none; color:black\" href=\"https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=LT5PXUN8UCBB2\"> for 1 print of </a><a style=\"text-decoration:none; color:black\" style=\"text-decoration:none\" href=\"http://books.goods.wordprostitute.com/Por&#10014;land/\">Por&#10014;land</a>. Only 1 print per person.<br />\n");
+push(@copyright,"<br />\n");
+push(@copyright,"<br />\n");
+push(@copyright,"<br />Copyright &#169; 2012 <a style=\"text-decoration:none; color:black\" href=\"http://wordprostitute.com\">Word Prostitute</a>&reg;. <a style=\"text-decoration:none; color:black\" href=\"http://wordprostitute.com/AllRightsReserved.html\">All Rights Reserved</a>.\n");
+push(@copyright,"<br />\n");
+push(@copyright,"<br />\n");
+push(@copyright,"<br />\n");
+push(@copyright,"<br /><a style=\"text-decoration:none; color:black\" href=\"http://books.goods.wordprostitute.com/Por&#10014;land/\">Por&#10014;land</a>'s paragraphs can be bookmarked (or added to Favorites).\n");
+push(@copyright,"<br />One needs to click on the paragraph then bookmark (or add to Favorites)\n");
+push(@copyright,"<br />the URL appearing in the U.S. Intranet web browser's address bar.\n");
+push(@copyright,"<br />\n");
+push(@copyright,"<br />\n");
+push(@copyright,"<br />\n");
+push(@copyright,"</p>\n");
+
+#
+# HTML Footer
+#
+push(@htmlfooter,"</body>\n");
+push(@htmlfooter,"</html>\n");
+
+#
+# Cover Array
+#
+
+
+1;

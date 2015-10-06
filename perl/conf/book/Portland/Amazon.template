@@ -1,0 +1,146 @@
+#Por&#10014;land  configuration file.
+#
+# The configuration file for the copyright, meta and publlishing data
+# of the book.
+#
+######################################
+#
+# Publishing
+#
+######################################
+#
+require "../../conf/$ARGV[0]/style.template";
+require "../../conf/$ARGV[0]/epub.2.conf";
+
+our %findreplaceprintpatterns = (
+        "☉" => "<img src=\"images/smallSun.png\" alt=\"Sun\"/>"
+);
+# Create array to replace unicode 
+our %characterimages = (
+	"&#9737;" => "<img src=\"images/bigSun.png\" alt=\"Sun\"/>"
+);
+
+
+# meta arrays.
+our @mimetype;
+our @containxml;
+our @contentopf;
+our @tocncx;
+our @stylesheet;
+#
+# Meta Description
+#
+our $metadescription = "Por&#10014;land, http://books.goods.wordprostitute.com/Por&#10014;land/, Por&#10014;land, a novel written by Kalab J. OsterTM, edited by Por&#10014;land, copy-edited by Valerie Jean Thompson, copy-edited with Word Prostitute(R), published with Word Prostitute(R), published in United States of America.";
+our $metakeywords = "Por&#10014;land, Por&#10014;land, Word Prostitute, United States of America, Valerie Jean Thompson, Kalab J Oster, Word, Prostitute, Por&#10014;land, Valerie, Jean, Thompson, Kalab, J, Oster";
+#
+# Head information...
+#
+push(@htmlhead,"<?xml version=\"1.0\" encoding=\"utf-8\" standalone=\"no\"?>\n");
+push(@htmlhead,"<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.1//EN\"\n");
+push(@htmlhead,"  \"http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd\">\n");
+push(@htmlhead,"\n");
+push(@htmlhead,"<html xmlns=\"http://www.w3.org/1999/xhtml\">\n");
+push(@htmlhead,"<head>\n");
+push(@htmlhead,"<title>Por&#10014;land</title>\n");
+push(@htmlhead,"<meta name=\"keywords\"    content=\"$metakeywords\" />\n");
+push(@htmlhead,"<meta name=\"description\"    content=\"$metadescription\" />\n");
+push(@htmlhead,"<link rel=\"StyleSheet\" href=\"style.css\" type=\"text/css\" media=\"screen\" />\n");
+push(@htmlhead,"<!--\n");
+push(@htmlhead,"\n");
+push(@htmlhead,"Por&#10014;land\n");
+push(@htmlhead,"Written by Kalab J. OsterTM\n");
+push(@htmlhead,"Edited by Por&#10014;land\n");
+push(@htmlhead,"Copy-Edited by Valerie Jean Thompson\n");
+push(@htmlhead,"Copy-Edited with Word Prostitute(R)\n");
+push(@htmlhead,"Published with Word Prostitute(R)\n");
+push(@htmlhead,"Published in United States of America\n");
+push(@htmlhead,"Library of Congress Control Number: 2012934498\n");
+push(@htmlhead,"International Standard Book Number: 9780972846523\n");
+push(@htmlhead,"Word Prostitute(R) Revision Control Number: 54493\n");
+push(@htmlhead,"\n");
+push(@htmlhead,"\n");
+push(@htmlhead,"Copyright (C) 2011 Word Prostitute(R). All Rights Reserved.\n");
+push(@htmlhead,"\n");
+push(@htmlhead,"\n");
+push(@htmlhead,"-->\n");
+push(@htmlhead,"</head>\n");
+#
+# Body Top...
+#
+push(@htmlbodyheader," \n");
+push(@htmlbodyheader,"<body>\n");
+push(@htmlbodyheader,"\n");
+#
+# Content Top...
+#
+push(@htmlbodytop,"<div>\n");
+push(@htmlbodytop,"\n");
+push(@htmlbodytop,"<br />\n");
+push(@htmlbodytop,"\n");
+push(@htmlbodytop,"<span class=\"title\">Por</span><img src=\"images/smallCross.png\" alt=\"t\"/><span class=\"title\">land</span>\n");
+push(@htmlbodytop,"<br />\n");
+push(@htmlbodytop,"<br />\n");
+push(@htmlbodytop,"<br />\n");
+push(@htmlbodytop,"\n");
+push(@htmlbodytop,"<span class=\"chapter\">\n");
+push(@htmlbodytop,"CHAPTER_NOLINE\n");
+push(@htmlbodytop,"</span>\n");;
+push(@htmlbodytop,"<br />\n");
+push(@htmlbodytop,"<br />\n");
+push(@htmlbodytop,"\n");
+
+
+#
+# Body Paragraph...
+#
+push(@paragraphtag,"<p class=\"mobi\" >\n");
+push(@paragraphtag,"</p>\n");
+#
+# Body bottom...
+#
+
+#
+# Copyright...
+#
+our @copyright;
+push(@copyright,"<p class=\"copyright\">\n");
+push(@copyright,"\n");
+push(@copyright,"<br />\n");
+push(@copyright,"<br />\n");
+push(@copyright,"<br />\n");
+push(@copyright,"<br />\n");
+push(@copyright,"<br />\n");
+push(@copyright,"<br />Portland\n");
+push(@copyright,"<br />Written by Kalab J. Oster&#8482;\n");
+push(@copyright,"<br />Edited by Portland\n");
+push(@copyright,"<br />Copy-Edited by Valerie Jean Thompson\n");
+push(@copyright,"<br />Copy-Edited with Word Prostitute&#174;\n");
+push(@copyright,"<br />Published with Word Prostitute&#174;\n");
+push(@copyright,"<br />Published in United States of America\n");
+push(@copyright,"<br />Library of Congress Control Number: 2012934498 \n");
+push(@copyright,"<br />International Standard Book Number: 9780972846523\n");
+push(@copyright,"<br />Word Prostitute&#174; Revision Control Number: 54493\n");
+push(@copyright,"<br />\n");
+push(@copyright,"<br />\n");
+push(@copyright,"<br />\n");
+push(@copyright,"<br />Copyright &#169; 2012 Word Prostitute&#174;. All Rights Reserved.\n");
+push(@copyright,"<br />\n");
+push(@copyright,"<br />\n");
+push(@copyright,"<br />\n");
+push(@copyright,"\n");
+push(@copyright,"</p>\n");
+#
+# HTML bodybottom
+#
+push(@htmlbodybottom,"</div>\n");
+
+
+#
+# HTML Footer
+#
+push(@htmlfooter,"</body>\n");
+push(@htmlfooter,"</html>\n");
+
+
+
+1;
