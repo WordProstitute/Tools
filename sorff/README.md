@@ -27,8 +27,8 @@ sorff.sh requires a Unix Bash shell that's available on Ubuntu, MacOS X or Cygwi
 
 ## Process:
 1. Install git: https://git-scm.com/book/en/v2/Getting-Started-Installing-Git
-2. Execute git: git clone https://github.com/WordProstitute/tools.git
+2. Execute git to clone source: git clone https://github.com/WordProstitute/tools.git
 3. Execute sorff.sh: (for example) bash ./tools/sorff/sorff.sh -p 'Kalab J Oster' -s 'Open'
-4. Change Directory: cd ~/Open.git
-5. Read, write, edit and publish.
+4. Change Directory: cd Open
+5. Read, write, edit and publish...
 
