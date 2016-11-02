@@ -43,6 +43,41 @@ Please feel free to use, hack or rewrite and call the scripts your own. And plea
 <a href="http://wordprostitute.com">Word Prostitute&reg;</a> left these scripts behind, so it can forget the scripts and begin to rewrite the processes with Java using objects and patterns to edit and publish words.
 </td>
 </tr>
+<tr>
+<td>
+sorff
+</td>
+<td>
+<h2>System of Record for Fiction</h2>
+<br />
+<br />
+PURPOSE:
+<br />
+The purpose of this document is to introduce the idea and present one of many ways to create a system of record for a fiction story.
+<br />
+<br />
+REQUIREMENTS:
+<br />
+If you don't understand a term or tool then you can copy text verbatim from this file and enter it into a search and return engine like Google or Bing for more definition.
+<br />
+<br />
+sorff.sh, the script that creates the system of record, requires a Bash Unix shell that's available on Ubuntu, MacOS X or Cygwin (for Windows), so sorff.sh can execute.
+<br />
+<br />
+DEFINITIONS:
+<br />
+A system of record is a term used by data scientists to label a data collection's authoritative source.
+<br />
+<br />
+A system of record's purpose for a fiction story is to provide a universal location for a writer or writers or editors to write and edit a story's text and binary files.
+<br />
+<br />
+A system of record for a fiction story can be as simple as a text document saved on some operating system in some server in a warehouse across an ocean, or it could be a file directory filled with files on your thumb-sized hard drive, or it could a source controlled centralized Git repository.
+<br />
+<br />
+The system of record for this story is a Git repository within a computer operating system using the following Tools to auto create a system of record for fiction for you.
+</td>
+</tr>
 </table>
 
 
