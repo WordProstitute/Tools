@@ -1,0 +1,49 @@
+
+System of Record for Fiction
+
+PURPOSE:
+The purpose of this document is to introduce the idea and present one of many ways to create a system of record for a fiction story.
+
+REQUIREMENTS:
+If you don't understand a term or tool then you can copy text verbatim from this file and enter it into a search and return engine like Google or Bing for more definition.
+
+sorff.sh, the script that creates the system of record, requires a Bash Unix shell that's available on Ubuntu, MacOS X or Cygwin (for Windows), so sorff.sh can execute.
+
+DEFINITIONS:
+A system of record is a term used by data scientists to label a data collection's authoritative source.
+
+A system of record's purpose for a fiction story is to provide a universal location for a writer or writers or editors to write and edit a story's text and binary files.
+
+A system of record for a fiction story can be as simple as a text document saved on some operating system in some server in a warehouse across an ocean, or it could be a file directory filled with files on your thumb-sized hard drive, or it could a source controlled centralized Git repository.
+
+The system of record for this story is a Git repository within a computer operating system using the following Tools to auto create a system of record for fiction for you.
+
+TOOLS:
+1. git
+ 
+The script sorff.sh uses a source control tool called Git. 
+
+Git is an opens source tool created by the Linux developer community to source control the Linux kernel. Git is used by Google, Microsoft, facebook, twitter, Linkedin and Nike as system of records for their software's source code, and Git is free.
+
+There are many other source control tools to create a story's system of record, but Git is decentralized, open source, widely used, actively developed and maintained. For now, its knowledge and use is good to have on a resume.
+
+2. sorff.sh
+
+A bash shell script that creates a system of record template from a Unix shell in your current working directory or your home directory.
+
+sorff.sh has three parameters: -h (for home) and -s (for story name) and -p (for pen name or pseudonym).  
+
+The parameter -h is an option that switches output of the system of record from your current working directory to your home directory. 
+
+The parameter -s takes an argument of a quoted story name that names the git repository for the system of record for fiction. 
+
+The parameter -p takes an argument of a quoted pseudonym that names a directory for your FunWork journal and a branch for you to develop your story in the system of record for fiction.
+
+sorff.sh requires a Unix Bash shell that's available on Ubuntu, MacOS X or Cygwin (for Windows), so sorff.sh can execute. sorff.sh has only been tested on Ubuntu and MacOS X.
+
+PROCESS:
+1. Install git: https://git-scm.com/book/en/v2/Getting-Started-Installing-Git
+2. Execute git: git clone https://github.com/WordProstitute/tools.git
+3. Execute sorff.sh: (for example) bash ./tools/sorff/sorff.sh -p 'Kalab J Oster' -s 'Open'
+4. Change Directory: cd ~/Open.git
+5. Read, write, edit and publish.
