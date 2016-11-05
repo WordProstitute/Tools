@@ -31,4 +31,3 @@ sorff.sh requires a Unix Bash shell that's available on Ubuntu, MacOS X or Cygwi
 3. Execute sorff.sh: (for example) bash ./tools/sorff/sorff.sh -p 'Kalab J Oster' -s 'Open'
 4. Change Directory: cd Open
 5. Read, write, edit and publish...
-

@@ -12,7 +12,7 @@
 # WordProstituteSystemOfRecordForFiction.txt defines System of Record for Fiction.
 
 # TODO:
-# 1. Edit the while do argument to have help option and change current -h to maybe -ho, so -h can be used for help.
+# 1. Edit the while do argument to have a help switch parameter and change current -h to maybe -ho, so -h can be used for help.
 # 2. Include and format WordProstituteSystemOfRecordForFiction.txt for the help.
 # 3. Check .git directory from root of current working directory.
 # 4. Implement the creation of FunWork.dtd.
@@ -36,7 +36,7 @@
 # Story, and if another writer writes or edits the Story then the writer's name needs to be appended to the end of
 # the Writer list of this Word Prostitute(R) Open Story License.
 
-# This link helped better write the lines 41 to 62 and how I want and can get command line arguments in bash:
+# This link helped better write the lines 41 to 62 for parsing command line arguments in bash:
 # http://stackoverflow.com/questions/192249/how-do-i-parse-command-line-arguments-in-bash
 echo "READ AND PUBLISH PARAMETERS FOR OPTIONS AND ARGUMENTS"
 while [[ $# -gt 1 ]]
@@ -70,7 +70,7 @@ if [[ -z $PSEUDONYM ]]; then
 fi
 echo "READ: CHECK FOR SPACE IN PSEUDONYM"
 if [[ $PSEUDONYM =~  ( |\') ]]; then
-     echo "EDIT: CREATE FILE DIRECTORY VERSION OF $PSEUDONYM BECAUSE SPACES BREAK FILE SENTENCES"
+     echo "EDIT: CREATE SPACELESS FILE DIRECTORY VERSION OF $PSEUDONYM BECAUSE SPACES BREAK FILE SENTENCES"
      PSEUDONYM_FILE_DIRECTORY="${PSEUDONYM// /_}"
      echo "PUBLISH: PSEUDONYM_FILE_DIRECTORY EXISTS WITHOUT SPACES: $PSEUDONYM_FILE_DIRECTORY"
 else
@@ -85,7 +85,7 @@ if [[ -z $STORY ]]; then
 fi
 echo "READ: CHECK FOR SPACE IN STORY"
 if [[ $STORY =~ ( |\') ]]; then
-     echo "EDIT: CREATE FILE DIRECTORY VERSION OF $STORY BECAUSE SPACES BREAK FILE SENTENCES"
+     echo "EDIT: CREATE SPACELESS FILE DIRECTORY VERSION OF $STORY BECAUSE SPACES BREAK FILE SENTENCES"
      STORY_FILE_DIRECTORY="${STORY// /_}"
      echo "PUBLISH: STORY_FILE_DIRECTORY EXISTS WITHOUT SPACES: $STORY_FILE_DIRECTORY"
 else
@@ -111,14 +111,13 @@ else
      echo "PUBLISH: PRINTING IN CURRENT WORKING DIRECTORY"
      echo "PUBLISH: IF IN A GIT REPOSITORY THEN YOU MAY WANT TO USE THE-h OPTION"
      echo "PUBLISH: WORKING EXAMPLE=bash $0 -h -p 'Kalab J Oster' -s 'Open'"
-     echo "WRITE: CREATE ENVIRONMENT VARIABLE ROOT_DIRECTORY  FOR GLOBAL USE"
+     echo "WRITE: CREATE ENVIRONMENT VARIABLE ROOT_DIRECTORY FOR GLOBAL USE"
      ROOT_DIRECTORY=$(pwd)
 fi
 
-echo "WRITE: CREATE ENVIRONMENT VARIABLE ROOT_DIRECTORY FOR GLOBAL USE" 
 echo "PUBLISH: SYSTEM OF RECORD EXISTS IN: $ROOT_DIRECTORY"
 
-echo "READ: CHANGE DIRECTORY INTO ROOT WORK DIRECTORY TO WRITE SYSTEM OF RECORD FOR FICTION"
+echo "READ: CHANGE DIRECTORY INTO ROOT DIRECTORY TO WRITE SYSTEM OF RECORD FOR FICTION"
 cd $ROOT_DIRECTORY
 
 echo "WRITE AND PUBLISH: CREATE SYSTEM OF RECORD"
@@ -135,7 +134,7 @@ echo "WRITE AND PUBLISH: DEFINE $PSEUDONYM AS GLOBAL GIT USER"
 git config --global user.name "$PSEUDONYM"
 git config --global user.email "$PSEUDONYM_FILE_DIRECTORY@localhost"
 
-echo "PUBLISH AND WRITE: OVERWRITE FILE AND DEFINE THE TITLE IN THE DESCRIPTION"
+echo "PUBLISH AND WRITE: OVERWRITE FILE AND DEFINE THE TITLE IN THE GIT DESCRIPTION"
 echo "$STORY" > $ROOT_DIRECTORY/$STORY_FILE_DIRECTORY/.git/description 
 
 echo "WRITE: CREATE DIRECTORY SENTENCES TO WORDS FOR $PSEUDONYM's FUNWORK JOURNAL"
@@ -156,8 +155,6 @@ touch $FUNWORK
 
 echo "WRITE AND PUBLISH: TEMPLATE $FUNWORK"
 
-echo "<?xml version='1.0'?>" >> $FUNWORK
-echo "<!DOCTYPE funwork SYSTEM 'FunWork.dtd'>" >> $FUNWORK
 echo "<funwork timeframe='week'>" > $FUNWORK
 echo "<funwork timeframe='day' time='$YEAR-$MONTH-$DAY' sounds='' images='' movies=''>" >> $FUNWORK
 echo "<read-write-publish  data='FunWork' from='' to='' />" >> $FUNWORK
@@ -202,7 +199,7 @@ git commit -m"Publish: README.md and Words directory to maybe define the story."
 
 echo "WRITE: TEMPLATE FOR BOOK FILE DIRECTORY"
 mkdir $ROOT_DIRECTORY/$STORY_FILE_DIRECTORY/Book
-echo "A story directory for publishing published." > $ROOT_DIRECTORY/$STORY_FILE_DIRECTORY/Book/README.md
+echo "A story directory for publishing the book." > $ROOT_DIRECTORY/$STORY_FILE_DIRECTORY/Book/README.md
 
 echo "PUBLISH: BOOK SENTENCE"
 git add Book/README.md
@@ -219,9 +216,9 @@ echo "PUBLISH: BEGIN"
 git add Words/1.txt
 git commit -m"Publish: a file that may begin what you need written." Words/1.txt
 
-echo "PUBLISH: CHANGE DIRECTORY AND MAYBE BEGIN WRITING A FICTION STORY"
+echo "PUBLISH: CHANGE DIRECTORY TO BEGIN WRITING A FICTION STORY"
 echo "PUBLISH: EXECUTE='cd $ROOT_DIRECTORY/$STORY_FILE_DIRECTORY/Words'"
-echo "PUBLISH: CHANGE DIRECTORY AND MAYBE WRITE THE JOURNAL OF A WRITER FOR YOU AND MAYBE A.I."
+echo "PUBLISH: CHANGE DIRECTORY TO WRITE THE JOURNAL OF A WRITER FOR YOU AND MAYBE A.I."
 echo "PUBLISH: EXECUTE='cd $ROOT_DIRECTORY/$STORY_FILE_DIRECTORY/Tool/$PSEUDONYM_FILE_DIRECTORY/FunWork'"
 echo "PUBLISH: MANUAL=https://git-scm.com/"
 echo "Thank you for writing with Word Prostitute(R)"
