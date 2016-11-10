@@ -8,7 +8,7 @@
 Directory
 </th>
 <th>
-Bullshit About The Code In The Directory
+Words About The Code In The Directory
 </th>
 </tr>
 <tr>
@@ -76,6 +76,17 @@ A system of record for a fiction story can be as simple as a text document saved
 <br />
 <br />
 The system of record for this story is a Git repository within a computer operating system using the following Tools to auto create a system of record for fiction for you.
+</td>
+</tr>
+<tr>
+<td>
+BrokenEnglishFictionModel.json
+</td>
+<td>
+Its ParagraphState is too simple and errors DialogState. PunctuationState's regexes are nascent and need to mature and grow because they're not casting the right pose. These errors and other errors inspire Word Prostitute&reg; to release this model to the world while Word Prostitute&reg; edits the model for deep learning machines, so they can edit and write.
+<br />
+<br />
+This will also make Word Prostitute&reg; paranoid and drive it to edit and write the model to be the one that automates editing.
 </td>
 </tr>
 </table>
